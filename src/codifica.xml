@@ -1,0 +1,1174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI>
+	<teiHeader> <!--l’intestazione contenente i metadati relativi al documento TEI XML  -->
+		<fileDesc> <!-- serve a dare informazioni sul file stesso -->
+			<titleStmt> 
+				<title type="main"> Diari di Emanuele Artom </title>
+				<title type="sub">Novembre 1943 - Febbraio 1944</title> 
+				<author ref="#EA"> Emanuele Artom </author>
+			</titleStmt>
+			<editionStmt>
+				<edition> Edizione digitale
+					<date when="12-2023"> Dicembre 2023 </date>
+				</edition>
+				<respStmt> 
+					<resp> Progetto coordinato da: </resp>
+					<name xml:id="AMDG"> Angelo Mario Del Grosso </name> 
+				</respStmt>
+				<respStmt>
+					<resp> Codifica e trascrizione a cura di: </resp>
+					<name xml:id="GMIF"> Giulia Mela e Ilenia Fortuna</name>
+				</respStmt>
+			</editionStmt>
+			<publicationStmt>
+				<publisher> Università di Pisa </publisher>
+				<pubPlace> Pisa </pubPlace>
+				<availability status="free"> <p> Opera a libero accesso </p> </availability>
+				<date when="12-2023"> Dicembre 2023 </date>
+			</publicationStmt>
+			<sourceDesc> <!-- contiene il riferimento alla fonte dalla quale è tratto il testo codificato -->
+				<msDesc>  <!-- contiene la descrizione del manoscritto -->
+					<msIdentifier>
+						<country key="IT"> Italia </country>
+						<settlement type="city"> Milano</settlement>
+						<repository xml:lang="it" ref="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html"> Centro di documentazione ebraica contemporanea </repository>
+						<collection> Fondo Emanuele Artom </collection>
+						<idno>ST0003-000006</idno>
+					</msIdentifier>
+					<msContents> 
+						<msItem> 
+							<author ref="#EA"> Emanuele Artom </author>
+							<title> Diario di <persName ref="#EA"> Emanuele Artom </persName></title>
+						</msItem>
+					</msContents>
+					<physDesc> 
+						<objectDesc form= "diary">
+							<supportDesc material="paper">
+								<support>Fogli di carta</support>
+								<extent>
+									<measure unit="pages" quantity="174">
+									Il diario presenta 174 pagine.
+									<note>Le prime due pagine contengono una lettera dalla madre dell'autore <persName ref="#AS">Amalia Segre</persName> per comunicare che il diario dovrà essere consegnato al <orgName ref="#CDEC">Centro di documentazione ebraica contemporanea</orgName>. </note>
+									</measure>
+								</extent>
+								<condition>
+									<p>Le pagine del diario sono in buone condizioni, ma presentano alcuni deterioramenti ai margini che però non ne compromettono la lettura.</p>
+								</condition>
+							</supportDesc>
+							<layoutDesc>
+								<p>Le pagine contengono circa 24 righe, ma in alcune si arriva anche ad un totale di 30.</p>
+							</layoutDesc>
+						</objectDesc>
+						<handDesc hands="2">
+							<p>Il diario presenta un appunto della madre <persName ref="#AS">Amalia Segre</persName>; invece tutto il resto è scritto da <persName ref="#EA">Emanuele Artom</persName>.</p>
+						</handDesc>
+						<typeDesc>
+						<p>Il diario è stato scritto principalmente a matita, ma si trovano alcune pagine nelle quali è stato utilizzato l'inchiostro. </p>
+						<p>Il tipo di scrittura utilizzata è il corsivo.</p>
+						</typeDesc>
+					</physDesc>
+					<history>
+						<origin>
+							<p> I diari sono composti da due parti distinte. </p> 
+							
+							Prima parte: <origDate><date from="1940-01-01" to="1943-09-10">1 gennaio 1940 - 10 settembre 1943</date></origDate> 
+							Seconda parte: <origDate><date from="1943-11--" to="1944-02-23">Novembre 1943 - 23 febbraio 1944</date></origDate> 
+
+
+							<p> La prima è una fonte di notizie sulla vita culturale torinese e sullo sviluppo della persecuzione razziale. La seconda parte riguarda invece l'esperienza partigiana di <persName ref="#EA"> Emanuele Artom </persName>. </p>
+							
+						</origin>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+
+		<encodingDesc> <!-- fornisce informazioni riguardo lo schema (e il modello di codifica) utilizzato -->
+			<projectDesc> 
+				<p> Questo progetto di codifica è stato eseguito per l'esame di Codifica di Testi. </p>
+			</projectDesc>
+			<editorialDecl>
+				<correction method="markup">
+					<p> Nei casi di errori grammaticali o ortografici, le correzioni sono state eseguite mediante l'uso dei tag <gi>sic</gi> e <gi>corr</gi>.</p>
+				</correction>
+				<normalization>
+					<p> La codifica delle normalizzazioni è stata eseguti mediante l'uso dei tag <gi>orig</gi> e <gi>reg</gi>.</p>
+				</normalization>
+				<punctuation> 
+					<p> La punteggiatura del testo non è stata modificata ed è stata codificata mediante il tag <gi>pc</gi>.</p>
+				</punctuation>
+				<segmentation>
+					<p>La codifica delle pagine del diario è stata effettuata delimitando blocchi di testo con il tag <gi>div</gi> e ogni pagina si riferisce ad una data specifica, espressa dall'autore, utilizzando il tag <gi>ab</gi>.</p>
+				</segmentation>
+				<stdVals>
+					<p>Nelle date presenti nelle pagine il formato utilizzando dentro l'attributo when è <val> AAAA-MM-GG </val>.</p>
+				</stdVals>
+				<interpretation>
+					<p> I nomi propri presenti nel testo sono stati marcati con il tag <gi> persName</gi>.</p>
+					<p> I nomi dei luoghi, invece, sono stati marcati con il tag <gi>placeName</gi>.</p>
+					<p> Le date sono state contrassegnate con il tag <gi>date</gi>.</p>
+					<p> I termini sono stati evidenziati mediante l'uso del tag <gi>term</gi>.</p> 
+				</interpretation>
+			</editorialDecl>
+		</encodingDesc>
+
+		<profileDesc> <!--fornisce una descrizione dettagliata degli aspetti non bibliografici di un testo -->
+			<langUsage>
+  				<language ident="it">Italiano</language>
+ 			</langUsage>
+ 			<textDesc>
+ 				<channel mode="w"/>
+ 				<constitution type="frags"/>
+				<derivation type="original" />
+				<domain type="private"/>
+ 				<factuality type="fact"/>
+ 				<interaction type="none"/>
+ 				<preparedness type="none"/>
+ 				<purpose type="express" />
+ 			</textDesc>
+ 		</profileDesc>
+ 	</teiHeader>
+ 
+ 	<facsimile>  <!--costituisce una rappresentazione digitale di una fonte con testo scritto espressa attraverso un insieme di immagini-->
+ 		<surface n="1" xml:id="p29"> <!--individua la superficie scritta di un’immagine-->
+			<graphic url='pag29.jpeg' width='761px' height='1024px' />
+	    	<zone xml:id="pag29_line1" ulx="108" uly="117" lrx="655" lry="153" rendition="line"/>
+	    	<note>Riga 1</note>
+			<zone xml:id="pag29_line2" ulx="110" uly="145" lrx="636" lry="184" rendition="line"/>
+			<note>Riga 2</note>
+		    <zone xml:id="pag29_line3" ulx="109" uly="187" lrx="658" lry="228" rendition="line"/>
+		    <note>Riga 3</note>
+		 	<zone xml:id="pag29_line4" ulx="108" uly="229" lrx="659" lry="272" rendition="line"/>
+		    <note>Riga 4</note>
+		    <zone xml:id="pag29_line5" ulx="108" uly="262" lrx="629" lry="308" rendition="line"/>
+		    <note>Riga 5</note>
+		    <zone xml:id="pag29_line6" ulx="107" uly="315" lrx="652" lry="342" rendition="line"/>
+		    <note>Riga 6</note>
+		    <zone xml:id="pag29_line7" ulx="107" uly="353" lrx="658" lry="386" rendition="line"/>
+		    <note>Riga 7</note>
+		    <zone xml:id="pag29_line8" ulx="109" uly="391" lrx="688" lry="425" rendition="line"/>
+		    <note>Riga 8</note>
+		    <zone xml:id="pag29_line9" ulx="107" uly="427" lrx="710" lry="459" rendition="line"/>
+		    <note>Riga 9</note>
+		    <zone xml:id="pag29_line10" ulx="110" uly="461" lrx="637" lry="496" rendition="line"/>
+		    <note>Riga 10</note>
+		    <zone xml:id="pag29_line11" ulx="109" uly="504" lrx="659" lry="540" rendition="line"/>
+		    <note>Riga 11</note>
+		    <zone xml:id="pag29_line12" ulx="109" uly="530" lrx="739" lry="574" rendition="line"/>
+		    <note>Riga 12</note>
+		    <zone xml:id="pag29_line13" ulx="109" uly="579" lrx="672" lry="609" rendition="line"/>
+		    <note>Riga 13</note>
+		    <zone xml:id="pag29_line14" ulx="109" uly="618" lrx="694" lry="657" rendition="line"/>
+		    <note>Riga 14</note>
+		    <zone xml:id="pag29_line15" ulx="108" uly="654" lrx="740" lry="699" rendition="line"/>
+		    <note>Riga 15</note>
+		    <zone xml:id="pag29_line16" ulx="111" uly="696" lrx="654" lry="724" rendition="line"/>
+		    <note>Riga 16</note>
+		    <zone xml:id="pag29_line17" ulx="110" uly="736" lrx="706" lry="766" rendition="line"/>
+		    <note>Riga 17</note>
+		    <zone xml:id="pag29_line18" ulx="111" uly="759" lrx="700" lry="799" rendition="line"/>
+		    <note>Riga 18</note>
+		    <zone xml:id="pag29_line19" ulx="110" uly="802" lrx="676" lry="840" rendition="line"/>
+		    <note>Riga 19</note>
+		    <zone xml:id="pag29_line20" ulx="111" uly="844" lrx="695" lry="877" rendition="line"/>
+		   	<note>Riga 20</note>
+		    <zone xml:id="pag29_line21" ulx="112" uly="881" lrx="702" lry="917" rendition="line"/>
+		    <note>Riga 21</note>
+		    <zone xml:id="pag29_line22" ulx="111" uly="912" lrx="667" lry="966" rendition="line"/>
+		    <note>Riga 22</note>
+		</surface>
+
+
+		<surface n="2" xml:id="p30">
+			<graphic url='pag30.jpeg' width='742px' height='1024px' />
+			<zone xml:id="pag30_line1" ulx="44" uly="29" lrx="698" lry="61" rendition="line"/>
+			<note>Riga 1</note>
+			<zone xml:id="pag30_line2" points = ' 43,63 38,88 696,69 677,47 ' rendition="quadrilater"/>
+			<note>Riga 2</note>
+			<zone xml:id="pag30_line3" points = ' 45,93 47,132 698,99 688,68 ' rendition="quadrilater" />
+			<note>Riga 3</note>
+			<zone xml:id="pag30_line4" points = ' 52,135 675,106 689,124 52,159 ' rendition="quadrilater"/>
+			<note>Riga 4</note>
+			<zone xml:id="pag30_line5" ulx="26" uly="172" lrx="324" lry="198" rendition="line" />
+			<note>Riga 5</note>
+			<zone xml:id="pag30_line6" ulx="47" uly="205" lrx="708" lry="249" rendition="line" />
+			<note>Riga 6</note>
+			<zone xml:id="pag30_line7" ulx="54" uly="247" lrx="712" lry="284" rendition="line" />
+			<note>Riga 7</note>
+			<zone xml:id="pag30_line8" ulx="56" uly="281" lrx="696" lry="312" rendition="line" />
+			<note>Riga 8</note>
+			<zone xml:id="pag30_line9" ulx="62" uly="315" lrx="702" lry="358" rendition="line" />
+			<note>Riga 9</note>
+			<zone xml:id="pag30_line10" ulx="58" uly="349" lrx="676" lry="395" rendition="line" />
+			<note>Riga 10</note>
+			<zone xml:id="pag30_line11" ulx="62" uly="408" lrx="665" lry="443" rendition="line" />
+			<note>Riga 11</note>
+			<zone xml:id="pag30_line12" ulx="52" uly="442" lrx="675" lry="476" rendition="line" />
+			<note>Riga 12</note>
+			<zone xml:id="pag30_line13" ulx="35" uly="474" lrx="677" lry="519" rendition="line" />
+			<note>Riga 13</note>
+			<zone xml:id="pag30_line14" ulx="64" uly="514" lrx="657" lry="553" rendition="line" />
+			<note>Riga 14</note>
+			<zone xml:id="pag30_line15" ulx="54" uly="556" lrx="708" lry="595" rendition="line" />
+			<note>Riga 15</note>
+			<zone xml:id="pag30_line16" points = ' 57,569 698,588 711,623 47,596 ' rendition="quadrilater" />
+			<note>Riga 16</note>
+			<zone xml:id="pag30_line17" ulx="53" uly="641" lrx="707" lry="692" rendition="line" />
+			<note>Riga 17</note>
+			<zone xml:id="pag30_line18" points = ' 44,692 55,649 708,677 709,714 ' rendition="quadrilater" />
+			<note>Riga 18</note>
+			<zone xml:id="pag30_line19" points = ' 50,696 684,735 694,780 44,728 ' rendition="quadrilater" />
+			<note>Riga 19</note>
+			<zone xml:id="pag30_line20" points ='46,689 42,722 692,772 685,742 ' rendition="quadrilater" />
+			<note>Riga 20</note>
+			<zone xml:id="pag30_line21" ulx="47" uly="813" lrx="685" lry="861" rendition="line" />
+			<note>Riga 21</note>
+			<zone xml:id="pag30_line22" points =' 49,777 667,812 686,842 43,814 ' rendition="quadrilater" />
+			<note>Riga 22</note>
+			<zone xml:id="pag30_line23" ulx="53" uly="900" lrx="671" lry="949" rendition="line" />
+			<note>Riga 23</note>
+			<zone xml:id="pag30_line24" ulx="58" uly="945" lrx="666" lry="988" rendition="line" />
+			<note>Riga 24</note>
+		</surface>
+
+		<surface n="3" xml:id="p31">
+			<graphic url='pag31.jpeg' width='741px' height='1023px' />
+			<zone xml:id="pag31_line1" ulx="71" uly="39" lrx="682" lry="80"  rendition="line" />
+			<note>Riga 1</note>
+			<zone xml:id="pag31_line2" ulx="64" uly="71" lrx="670" lry="121" rendition="line" />
+			<note>Riga 2</note>
+			<zone xml:id="pag31_line3" points = ' 708,176 682,138 82,109 77,139 ' rendition="quadrilater" />
+			<note>Riga 3</note>
+			<zone xml:id="pag31_line4" ulx="75" uly="144" lrx="514" lry="185" rendition="line" />
+			<note>Riga 4</note>
+			<zone xml:id="pag31_line5" ulx="74" uly="186" lrx="697" lry="223" rendition="line" />
+			<note>Riga 5</note>
+			<zone xml:id="pag31_line6" ulx="71" uly="222" lrx="664" lry="258" rendition="line" />
+			<note>Riga 6</note>
+			<zone xml:id="pag31_line7" ulx="69" uly="253" lrx="703" lry="291" rendition="line" />
+			<note>Riga 7</note>
+			<zone xml:id="pag31_line8" ulx="70" uly="293" lrx="696" lry="333" rendition="line" />
+			<note>Riga 8</note>
+			<zone xml:id="pag31_line9" ulx="64" uly="331" lrx="705" lry="375" rendition="line" />
+			<note>Riga 9</note>
+			<zone xml:id="pag31_line10" ulx="59" uly="368" lrx="655" lry="412" rendition="line" />
+			<note>Riga 10</note>
+			<zone xml:id="pag31_line11" ulx="67" uly="403" lrx="653" lry="457" rendition="line" />
+			<note>Riga 11</note>
+			<zone xml:id="pag31_line12" ulx="64" uly="450" lrx="682" lry="493" rendition="line" />
+			<note>Riga 12</note>
+			<zone xml:id="pag31_line13" ulx="70" uly="483" lrx="642" lry="533" rendition="line" />
+			<note>Riga 13</note>
+			<zone xml:id="pag31_line14" points = ' 78,524 675,560 660,585 73,556' rendition="quadrilater" />
+			<note>Riga 14</note>
+			<zone xml:id="pag31_line15" points = ' 73,564 631,601 718,633 61,596' rendition="quadrilater" />
+			<note>Riga 15</note>
+			<zone xml:id="pag31_line16" ulx="71" uly="606" lrx="679" lry="673" rendition="line" />
+			<note>Riga 16</note>
+			<zone xml:id="pag31_line17" ulx="77" uly="660" lrx="677" lry="708" rendition="line" />
+			<note>Riga 17</note>
+			<zone xml:id="pag31_line18" ulx="57" uly="697" lrx="630" lry="766" rendition="line" />
+			<note>Riga 18</note>
+			<zone xml:id="pag31_line19" ulx="66" uly="748" lrx="678" lry="795" rendition="line" />
+			<note>Riga 19</note>
+			<zone xml:id="pag31_line20" ulx="67" uly="795" lrx="649" lry="837" rendition="line" />
+			<note>Riga 20</note>
+			<zone xml:id="pag31_line21" ulx="64" uly="854" lrx="675" lry="889" rendition="line" />
+			<note>Riga 21</note>
+			<zone xml:id="pag31_line22" ulx="67" uly="886" lrx="636" lry="936" rendition="line"/>
+			<note>Riga 22</note>
+			<zone xml:id="pag31_line23" ulx="67" uly="936" lrx="635" lry="973" rendition="line" />
+			<note>Riga 23</note>
+			<zone xml:id="pag31_line24" ulx="52" uly="968" lrx="607" lry="1001" rendition="line" />
+			<note>Riga 24</note>
+		</surface>
+
+		<surface n="4" xml:id="p32"> 
+			<graphic url='pag32.jpeg' width='736px' height='1023px'/>
+		    <zone xml:id="pag32_line1" ulx="24" uly="20" lrx="700" lry="57" rendition="line" />
+		    <note>Riga 1</note>
+		    <zone xml:id="pag32_line2" ulx="23" uly="52" lrx="700" lry="81" rendition="line"/>
+		    <note>Riga 2</note>
+		    <zone xml:id="pag32_line3" ulx="22" uly="85" lrx="708" lry="116" rendition="line"/>
+		    <note>Riga 3</note>
+		    <zone xml:id="pag32_line4" ulx="31" uly="114" lrx="666" lry="145" rendition="line"/>
+		    <note>Riga 4</note>
+		    <zone xml:id="pag32_line5" points = ' 35,154 387,141 701,138 707,172 37,194 ' rendition="pentagon"/>
+		    <note>Riga 5</note>
+		    <zone xml:id="pag32_line6" points = ' 32,193 702,171 710,208 42,226 ' rendition="quadrilater" />
+		    <note>Riga 6</note>
+		    <zone xml:id="pag32_line7" points = ' 23,239 362,213 704,205 699,235 30,271 ' rendition="pentagon" />
+		    <note>Riga 7</note>
+		    <zone xml:id="pag32_line8" points = ' 30,271 379,241 699,239 695,274 35,300 ' rendition="pentagon"/>
+		    <note>Riga 8</note>
+		    <zone xml:id="pag32_line9" points = ' 45,301 689,272 687,305 337,320 39,343 ' rendition="pentagon" />
+		    <note>Riga 9</note>
+		    <zone xml:id="pag32_line10" points = ' 27,334 330,328 463,302 713,308 713,351 37,380 ' rendition="hexagon"/>
+		    <note>Riga 10</note>
+		    <zone xml:id="pag32_line11" points = ' 27,376 368,359 678,341 689,379 496,382 37,412 ' rendition="hexagon" />
+		    <note>Riga 11</note>
+		    <zone xml:id="pag32_line12" points = ' 30,409 515,376 703,381 702,416 309,428 33,452 ' rendition="hexagon"/>
+		    <note>Riga 12</note>
+		    <zone xml:id="pag32_line13" points = ' 31,448 325,426 707,411 710,459 39,488 ' rendition="pentagon"/>
+		    <note>Riga 13</note>
+		    <zone xml:id="pag32_line14" points = ' 30,486 354,473 704,459 707,490 32,532 ' rendition="pentagon"/>
+		    <note>Riga 14</note>
+		    <zone xml:id="pag32_line15" points = ' 26,523 708,489 708,529 35,560' rendition="quadrilater" />
+		    <note>Riga 15</note>
+		    <zone xml:id="pag32_line16" points = ' 29,555 712,521 716,558 35,593 ' rendition="quadrilater"/>
+		    <note>Riga 16</note>
+		    <zone xml:id="pag32_line17" points = ' 23,592 696,557 691,589 33,633 ' rendition="quadrilater"/>
+		    <note>Riga 17</note>
+		    <zone xml:id="pag32_line18" points = ' 26,632 717,586 725,626 35,661 ' rendition="quadrilater"/>
+		    <note>Riga 18</note>
+		    <zone xml:id="pag32_line19" points = ' 27,666 698,623 699,657 35,702 ' rendition="quadrilater"/>
+		    <note>Riga 19</note>
+		    <zone xml:id="pag32_line20" points = ' 35,699 692,653 695,695 39,740 ' rendition="quadrilater"/>
+		    <note>Riga 20</note>
+		    <zone xml:id="pag32_line21" points = ' 30,738 392,713 395,743 41,770 ' rendition="quadrilater"/>
+		    <note>Riga 21</note>
+		    <zone xml:id="pag32_line22" ulx="406" uly="735" lrx="551" lry="764" rendition="line"/>
+		    <note>Riga 22</note>
+		    <zone xml:id="pag32_line23" points = ' 35,789 683,743 691,781 39,828 ' rendition="quadrilater"/>
+		    <note>Riga 23</note>
+		    <zone xml:id="pag32_line24" points = ' 29,822 684,775 690,813 39,859 ' rendition="quadrilater"/>
+		    <note>Riga 24</note>
+		    <zone xml:id="pag32_line25" points = ' 37,860 698,812 700,846 39,896 ' rendition="quadrilater"/>
+		    <note>Riga 25</note>
+		    <zone xml:id="pag32_line26" points = ' 41,893 693,841 693,880 46,925 ' rendition="quadrilater"/>
+		    <note>Riga 26</note>
+		    <zone xml:id="pag32_line27" points = ' 35,924 659,872 648,910 51,954 ' rendition="quadrilater"/>
+		    <note>Riga 27</note>
+		    <zone xml:id="pag32_line28" points = ' 43,953 716,907 710,949 51,978 ' rendition="quadrilater"/>
+		    <note>Riga 28</note>
+		    <zone xml:id="pag32_line29" points = ' 50,973 659,935 652,981 56,1004 ' rendition="quadrilater"/>
+		    <note>Riga 29</note>
+		</surface>
+
+		<surface n="5" xml:id="p33">
+			<graphic url='pag33.jpeg' width='736px' height='1023px' />
+			<zone xml:id="pag33_line1" ulx="30" uly="27" lrx="685" lry="64" rendition="line" />
+			<note>Riga 1</note>
+			<zone xml:id="pag33_line2" ulx="35" uly="57" lrx="714" lry="95" rendition="line" />
+			<note>Riga 2</note>
+			<zone xml:id="pag33_line3" ulx="40" uly="88" lrx="696" lry="115" rendition="line" />
+			<note>Riga 3</note>
+			<zone xml:id="pag33_line4" ulx="32" uly="121" lrx="680" lry="141" rendition="line" />
+			<note>Riga 4</note>	
+			<zone xml:id="pag33_line5" ulx="38" uly="152" lrx="704" lry="174" rendition="line" />
+			<note>Riga 5</note>	
+			<zone xml:id="pag33_line6" points = ' 43,191 480,179 494,206 37,222 ' rendition="quadrilater" />
+			<note>Riga 6</note>	
+			<zone xml:id="pag33_line7" ulx="470" uly="209" lrx="555" lry="241" rendition="line"/>
+			<note>Riga 7</note>	
+			<zone xml:id="pag33_line8" ulx="49" uly="264" lrx="689" lry="295" rendition="line"/>
+			<note>Riga 8</note>	
+			<zone xml:id="pag33_line9" ulx="65" uly="305" lrx="667" lry="334" rendition="line"/>
+			<note>Riga 9</note>	
+			<zone xml:id="pag33_line10" ulx="65" uly="340" lrx="690" lry="376" rendition="line"/>
+			<note>Riga 10</note>	
+			<zone xml:id="pag33_line11" ulx="65" uly="380" lrx="649" lry="406" rendition="line"/>
+			<note>Riga 11</note>		
+			<zone xml:id="pag33_line12" ulx="65" uly="414" lrx="671" lry="448" rendition="line"/>
+			<note>Riga 12</note>	
+			<zone xml:id="pag33_line13" ulx="61" uly="453" lrx="649" lry="487" rendition="line"/>
+			<note>Riga 13</note>	
+			<zone xml:id="pag33_line14" ulx="62" uly="492" lrx="631" lry="518" rendition="line"/>
+			<note>Riga 14</note>	
+			<zone xml:id="pag33_line15" ulx="61" uly="519" lrx="665" lry="551" rendition="line"/>
+			<note>Riga 15</note>
+			<zone xml:id="pag33_line16" ulx="55" uly="559" lrx="671" lry="592" rendition="line"/>
+			<note>Riga 16</note>
+			<zone xml:id="pag33_line17" ulx="57" uly="594" lrx="682" lry="637" rendition="line"/>
+			<note>Riga 17</note>
+			<zone xml:id="pag33_line18" ulx="54" uly="637" lrx="644" lry="674" rendition="line"/>
+			<note>Riga 18</note>
+			<zone xml:id="pag33_line19" ulx="53" uly="678" lrx="629" lry="721" rendition="line"/>
+			<note>Riga 19</note>
+			<zone xml:id="pag33_line20" points = ' 62,716 644,737 651,763 54,753 ' rendition="quadrilater" />
+			<note>Riga 20</note>
+			<zone xml:id="pag33_line21" ulx="59" uly="763" lrx="661" lry="810" rendition="line"/>
+			<note>Riga 21</note>
+			<zone xml:id="pag33_line22" points = ' 50,798 662,815 677,854 38,826 ' rendition="quadrilater"/>
+			<note>Riga 22</note>
+			<zone xml:id="pag33_line23" points = ' 61,835 631,864 639,888 54,863 ' rendition="quadrilater" />
+			<note>Riga 23</note>
+			<zone xml:id="pag33_line24" points = ' 58,867 368,882 633,909 637,932 52,903 ' rendition="pentagon" />
+			<note>Riga 24</note>
+			<zone xml:id="pag33_line25" points = ' 57,907 366,918 667,953 670,985 52,955 ' rendition="pentagon" />
+			<note>Riga 25</note>
+		</surface>
+	</facsimile>
+
+	<text xml:lang="it" xml:id="Pagine_29-33"> <!--contiene un unico testo di qualsiasi tipo-->
+		<body> 
+			<!--Codifica pagina 29-->
+			<div type="page" n="29">
+				<pb facs="#p29" xml:id="pag1" n="1" />
+				<!--Gap data-->
+				<dateline><date when="1943-12-02" facs="#p29"> <gap reason="omitted"/> </date></dateline>
+				<!--Codifica giorno 2 dicembre 1943-->
+				<ab type="day" xml:id="dic_02" n="1">
+					<!--Riga1-->
+					<lb xml:id="p29_r1" facs="#pag29_line1" n="1"/>
+					e la pregherò di andare <del rend="line">nel</del> sul posto e di 
+					<!--Riga2-->
+					<lb xml:id="p29_r2" facs="#pag29_line2" n="2"/>
+					rintracciarli<pc>;</pc> <w> <subst> <del rend="overwrite">o</del><add>s</add></subst>tanotte </w><subst><del rend="line">cercavo</del><add place="supralinear"> pensavo i </add></subst><del rend="overtype">d</del> segni di ri<pc type="return">=</pc>
+					<!--Riga3-->
+					<lb xml:id="p29_r3" facs="#pag29_line3" n="3"/>
+					<choice resp="#GMIF"><sic>coscimento</sic><corr> riconoscimento</corr></choice><add place="above"> adatti </add><choice resp="#GMIF"><sic>perchè</sic><corr> perché</corr></choice> i padroni di casa e <persName ref="#VG"><choice resp="#GMIF"><abbr type="suspension"> Gab.</abbr><expan> Gabetti</expan></choice></persName>
+					<!--Riga4-->
+					<lb xml:id="p29_r4" facs="#pag29_line4" n="4"/>
+					si fidino di lei<pc>.</pc> Intanto mi sorgono <del rend="line">del</del> in
+					<!--Riga5-->
+					<lb xml:id="p29_r5" facs="#pag29_line5" n="5"/> 
+					testa delle ipotesi sensate <gap reason="cancelled"/> <subst><del rend="overstrike" cert="low">di</del><add place="above"> di</add></subst> <del rend="line">sempre</del>
+					<!--Riga6-->
+					<lb xml:id="p29_r6" facs="#pag29_line6" n="6"/> 
+					nuove e più complicate <choice resp="#GMIF"><sic>difficoltá</sic><corr> difficoltà</corr></choice><pc>:</pc> sup<pc type="return">=</pc>
+					<!--Riga7-->
+					<lb xml:id="p29_r7" facs="#pag29_line7" n="7"/> 
+					poniamo che si sistemino in una casa e 
+					<!--Riga8-->
+					<lb xml:id="p29_r8" facs="#pag29_line8" n="8"/> 
+					poi la <rs type="person">nonna</rs> muoia<pc>:</pc> come la seppelliran<pc type="return">=</pc>
+					<!--Riga9-->
+					<lb xml:id="p29_r9" facs="#pag29_line9" n="9"/> 
+					no<pc>? </pc><choice resp="#GMIF"><sic>da</sic><corr> Da</corr></choice> <choice resp="#GMIF"><orig>Ebrea</orig><reg> ebrea</reg></choice><pc>?</pc> <choice resp="#GMIF"><sic>da</sic><corr> Da</corr></choice> <choice resp="#GMIF"><orig>Cristiana</orig><reg> cristiana</reg></choice><pc>?</pc> <choice resp="#GMIF"><sic>da</sic><corr> Da</corr></choice> acattolica<pc>?</pc>
+					<!--Riga10-->
+					<lb xml:id="p29_r10" facs="#pag29_line10" n="10"/> 
+					I carabinieri pare minaccino l'arresto dei
+					<!--Riga11-->
+					<lb xml:id="p29_r11" facs="#pag29_line11" n="11"/> 
+					genitori delle reclute non presentatesi<pc>.</pc> Il 
+					<!--Riga12-->
+					<lb xml:id="p29_r12" facs="#pag29_line12" n="12"/> 
+					proveddimento<pc>,</pc> oltre che illegale <add place="above"> e tale da esasperare la <w rend="descending">popolazione</w></add><pc>,</pc> è anche
+					<!--Riga13-->
+					<lb xml:id="p29_r13" facs="#pag29_line13" n="13"/> 
+					inattuabile<pc>,</pc> <choice resp="#GMIF"><sic>perchè</sic><corr> perché</corr></choice> gli arrestati non ci sta<pc type="return">=</pc>
+					<!--Riga14-->
+					<lb xml:id="p29_r14" facs="#pag29_line14" n="14"/>
+					rebbero <w><add place="inline">ne</add>lle</w> prigioni<pc>,</pc> dato che mi <w><choice resp="#GMIF"><sic>risulter</sic><corr> risulta</corr></choice><del rend="overstrike">ebbe</del></w>
+					<!--Riga15-->
+					<lb xml:id="p29_r15" facs="#pag29_line15" n="15"/>
+					che nella <choice resp="#GMIF"> <abbr type="suspension">prov.</abbr><expan> provincia</expan></choice> di <placeName ref="#TO"><choice resp="#GMIF"> <abbr type="geographic">Tor</abbr><expan> Torino</expan></choice></placeName> si sono presentati <num>2000</num><w rend="descending"> giovani</w>
+					<!--Riga16-->
+					<lb xml:id="p29_r16" facs="#pag29_line16" n="16"/>
+					in quella di <placeName ref="#CN">Cuneo</placeName> <num>30</num><pc>,</pc> in tutta la <placeName ref="#VDP">Valle 
+					<!--Riga17-->
+					<lb xml:id="p29_r17" facs="#pag29_line17" n="17"/>
+					del Pellice</placeName> <num>6</num><pc>;</pc> invece<pc>,</pc> <del rend="line">arrestai</del> <gap reason="cancelled"/> i genitori
+					<!--Riga18-->
+					<lb xml:id="p29_r18" facs="#pag29_line18" n="18"/>
+					degli <choice resp="#GMIF"><orig>Ebrei</orig><reg> ebrei</reg></choice> fuggiti potrebbero essere soggetti 
+					<!--Riga19-->
+					<lb xml:id="p29_r19" facs="#pag29_line19" n="19"/>
+					a rappresaglie<pc>.</pc> È un <del rend="line">mes</del> anno che siamo 
+					<!--Riga20-->
+					<lb xml:id="p29_r20" facs="#pag29_line20" n="20"/>
+					sfollati a <placeName ref="#MO"><unclear reason="ink blot" cert="high">Moriondo</unclear></placeName> <pc>:</pc> <choice resp="#GMIF"><sic>tralslochi</sic><corr> traslochi</corr></choice><pc>,</pc> freddo<pc>,</pc> disagi<pc>,</pc>
+					<!--Riga21-->
+					<lb xml:id="p29_r21" facs="#pag29_line21" n="21"/>
+					morte di <persName ref="#Lino">Lino</persName><pc>,</pc> grigi mesi di noia <gap reason="cancelled"/> e solitudine<pc>,</pc>
+					<!--Riga22-->
+					<lb xml:id="p29_r22" facs="#pag29_line22" n="22"/>
+					faticosi viaggi in città<pc>,</pc> <subst><del rend="line">urti</del><add place="sublinear"> discussioni</add></subst> in <add place="inline"> famiglia</add> per il fi<pc type="return">=</pc>
+				</ab>
+			</div>
+
+			<!--Codifica pagina 30-->
+			<div type="page" n="30">
+				<pb facs="#p30" xml:id="pag30"  n="2"/>
+				<!--Gap data-->
+				<dateline><date when="1943-12-02" facs="#p30"> <gap reason="omitted"/> </date></dateline>
+				<!--Codifica giorno 2 dicembre 1943-->
+				<ab n="1">
+					<!--Riga1-->
+					<lb xml:id="p30_r1" facs="#pag30_line1" n="1"/>
+					danzamento con <persName ref="#Marcella">Marcella</persName><pc>,</pc> <w><subst><del rend="overwrite">l</del><add>c</add></subst>alori </w> canicolari<pc>,</pc>
+					<!--Riga2-->
+					<lb xml:id="p30_r2" facs="#pag30_line2" n="2"/>
+					<gap reason="cancelled"/><del rend="line">ro</del> avvento dei <choice resp="#GMIF"><orig>Tedeschi</orig><reg> tedeschi</reg></choice><pc>,</pc> rottura del fidan<pc type="return">=</pc>
+					<!--Riga3-->
+					<lb xml:id="p30_r3" facs="#pag30_line3" n="3"/>
+					zamento<pc>,</pc> abbandono della <subst><del rend="line">famiglia</del><add place="supralinear">casa</add></subst><pc>,</pc> provvedi<pc type="return">=</pc>
+					<!--Riga4-->
+					<lb xml:id="p30_r4" facs="#pag30_line4" n="4"/>
+					menti <term ref="#termAnt">antisemiti</term><pc>:</pc> ecco il <del rend="overstrike" cert="low">bi</del> lieto bilancio di 
+					<!--Riga5-->
+					<lb xml:id="p30_r5" facs="#pag30_line5" n="5"/>
+					un anno di vita<pc>.</pc>
+					<!--Riga6-->
+					<lb xml:id="p30_r6" facs="#pag30_line6" n="6"/>
+					<del rend="line">Mentre</del> Aspettai il treno per <time when="PT1H">un'ora</time><pc>.</pc> Mentre
+					<!--Riga7-->
+					<lb xml:id="p30_r7" facs="#pag30_line7" n="7"/>
+					girellavo per la stazione e <unclear reason="ink blot" cert="high">il</unclear> treno <unclear reason="ink blot" cert="high">non</unclear>
+					<!--Riga8-->
+					<lb xml:id="p30_r8" facs="#pag30_line8" n="8"/>
+					arrivava a causa dei danni <unclear reason="ink blot" cert="high">provocati</unclear>
+					<!--Riga9-->
+					<lb xml:id="p30_r9" facs="#pag30_line9" n="9"/>
+					dai bombardamenti di ieri<pc>,</pc> vidi un manifesto 
+					<!--Riga10-->
+					<lb xml:id="p30_r10" facs="#pag30_line10" n="10"/>
+					di arruolamento alla <term ref="#termMil"><choice resp="#GMIF"><orig>Milizia</orig><reg> milizia</reg></choice></term><pc>,</pc> <w>c<subst><del rend="overwrite">on</del><add>he</add></subst></w> tra 
+					<!--Riga11-->
+					<lb xml:id="p30_r11" facs="#pag30_line11" n="11"/>
+					le altre <del rend="line">cose</del> richieste metteva <soCalled>«<choice resp="#GMIF"><sic>moralitá</sic><corr> moralità</corr></choice>
+					<!--Riga12-->
+					<lb xml:id="p30_r12" facs="#pag30_line12" n="12"/>
+					<choice resp="#GMIF"><sic>ineccebile</sic><corr> ineccepibile</corr></choice>»</soCalled><pc>.</pc> Allora mi avvicinai e scrissi<pc>:</pc>
+					<!--Riga13-->
+					<lb xml:id="p30_r13" facs="#pag30_line13" n="13"/>
+					<q type="written">«In questo caso non <add place="above">ci</add> si arruola<gap reason="cancelled"/> nella 
+					<!--Riga14-->
+					<lb xml:id="p30_r14" facs="#pag30_line14" n="14"/>
+					<term ref="#termMil"><choice resp="#GMIF"><orig>Milizia'</orig><reg> milizia</reg></choice></term>»</q><pc>.</pc> Di ritorno incontrai <num>due</num>
+					<!--Riga15-->
+					<lb xml:id="p30_r15" facs="#pag30_line15" n="15"/>
+					camion pieni di <term ref="#termPart">partigiani</term> che tornavano
+					<!--Riga16-->
+					<lb xml:id="p30_r16" facs="#pag30_line16" n="16"/>
+					dalla più brillante impresa compiuta fino
+					<!--Riga17-->
+					<lb xml:id="p30_r17" facs="#pag30_line17" n="17"/>
+					ad ora <pc>:</pc> <w> assalt<subst><del rend="overwrite">p</del><add>o</add></subst></w> ad un campo di aviazione<pc>,</pc> 
+					<!--Riga18-->
+					<lb xml:id="p30_r18" facs="#pag30_line18" n="18"/>
+					distruzione di <num>40</num> apparecchi<pc>,</pc> grosso bottino
+					<!--Riga19-->
+					<lb xml:id="p30_r19" facs="#pag30_line19" n="19"/>
+					di guerra<pc>:</pc> tutto senza sparare un colpo
+					<!--Riga20-->
+					<lb xml:id="p30_r20" facs="#pag30_line20" n="20"/>
+					disarmando una sola guardia<pc>.</pc>
+					<!--Riga21-->
+					<lb xml:id="p30_r21" facs="#pag30_line21" n="21"/>
+					Il <choice resp="#GMIF"><abbr type="title">Comand.</abbr><expan> comandante</expan></choice> ha finalmente trovato un 
+					<!--Riga22-->
+					<lb xml:id="p30_r22" facs="#pag30_line22" n="22"/>
+					posto per <subst><del type="overstrike">la</del><add place="inline">il</add></subst> <w>mi<subst><del type="overwrite">a</del><add place="inline">o</add></subst></w><pc>,</pc> dove andrò 
+					<!--Riga23-->
+					<lb xml:id="p30_r23" facs="#pag30_line23" n="23"/>
+					ad abitare<pc>.</pc> La <persName ref="#Gina">Gina</persName> si mostra <del type="overstrike" cert="low">penti</del> di<pc type="return">=</pc>
+					<!--Riga24-->
+					<lb xml:id="p30_r24" facs="#pag30_line24" n="24"/>
+					spiaciuta che la lasci<pc>.</pc> <w> <subst> <del rend="overwrite">F</del><add>A</add></subst>lle</w> <num>11</num> ricevo
+				</ab>
+			</div>
+
+			<!--Codifica pagina 31-->
+			<div type="page" n="31">
+				<pb facs="#p31" xml:id="pag31"  n="3"/>
+				<!--Gap data-->
+				<dateline><date when="1943-12-02" facs="#p31"> <gap reason="omitted"/> </date></dateline>
+				<!--Codifica giorno 2 dicembre 1943-->
+				<ab n="1">
+					<!--Riga1-->
+					<lb xml:id="p31_r1" facs="#pag31_line1" n="1"/>
+					una lettera da casa<pc>,</pc> <del rend="line">nella</del> che dice che 
+					<!--Riga2-->
+					<lb xml:id="p31_r2" facs="#pag31_line2" n="2"/>
+					<del rend="overstrike">ci</del> si sono sistemati in un altro posto<pc>,</pc>
+					<!--Riga3-->
+					<lb xml:id="p31_r3" facs="#pag31_line3" n="3"/>
+					che qui non scrivo per timore che 
+					<!--Riga4-->
+					<lb xml:id="p31_r4" facs="#pag31_line4" n="4"/>
+					questi fogli vadano perduti<pc>.</pc>
+					<!--Riga5-->
+					<lb xml:id="p31_r5" facs="#pag31_line5" n="5"/>
+					Ora io ho un progetto<pc>:</pc> se sarò nomi<pc type="return">=</pc>
+					<!--Riga6-->
+					<lb xml:id="p31_r6" facs="#pag31_line6" n="6"/> 
+					nato <choice resp="#GMIF"><abbr type="title">comm.</abbr><expan> commissario</expan></choice> in altra località<pc>,</pc> <rs type="person">papà</rs> 
+					<!--Riga7-->
+					<lb xml:id="p31_r7" facs="#pag31_line7" n="7"/> 
+					potrebbe prendere il mio posto di aiutante
+					<!--Riga8-->
+					<lb xml:id="p31_r8" facs="#pag31_line8" n="8"/> 
+					maggiore<pc>.</pc> Così sarebbe utile alla guerra<pc>,</pc>
+					<!--Riga9-->
+					<lb xml:id="p31_r9" facs="#pag31_line9" n="9"/> 
+					sicuro<pc>,</pc> fuori spese<pc>.</pc> Il comando non perde<pc type="return">=</pc>
+					<!--Riga10-->
+					<lb xml:id="p31_r10" facs="#pag31_line10" n="10"/> 
+					rebbe nulla dal mio allontanamento<pc>,</pc> 
+					<!--Riga11-->
+					<lb xml:id="p31_r11" facs="#pag31_line11" n="11"/> 
+					anzi <rs type="person">papà</rs> lavorerebbe più <choice resp="#GMIF"><sic>colla</sic><corr> con la</corr></choice> testa 
+					<!--Riga12-->
+					<lb xml:id="p31_r12" facs="#pag31_line12" n="12"/> 
+					sul collo di me<pc>,</pc> la <rs type="person">mamma</rs> e la <rs type="person">nonna</rs> <pc>,</pc>
+					<!--Riga13-->
+					<lb xml:id="p31_r13" facs="#pag31_line13" n="13"/> 
+					solo in <num>2</num> sarebbero anche più sicure<pc>,</pc>
+					<!--Riga14-->
+					<lb xml:id="p31_r14" facs="#pag31_line14" n="14"/>
+					<unclear reason="illegible" cert="low"> senza</unclear> uomini in casa<pc>,</pc> io avrei un posto 
+					<!--Riga15-->
+					<lb xml:id="p31_r15" facs="#pag31_line15" n="15"/> 
+					che preferisco e di maggior soddisfazione<pc>.</pc>
+					<!--Riga16-->
+					<lb xml:id="p31_r16" facs="#pag31_line16" n="16"/> 
+					Tutti contenti<pc>.</pc> <gap reason="deleted"/> Oggi ne
+					<!--Riga17-->
+					<lb xml:id="p31_r17" facs="#pag31_line17" n="17"/> 
+					parlerò al comandante e<pc>,</pc> se approva<pc>,</pc>
+					<!--Riga18-->
+					<lb xml:id="p31_r18" facs="#pag31_line18" n="18"/> 
+					farò in bici una corsa a <placeName ref="#TP"> Torre Pellice</placeName><pc>.</pc>
+					<!--Riga19-->
+					<lb xml:id="p31_r19" facs="#pag31_line19" n="19"/> 
+					L'altro giorno mangiai per la prima 
+					<!--Riga20-->
+					<lb xml:id="p31_r20" facs="#pag31_line20" n="20"/> 
+					volta in vita mia del salame di 
+					<!--Riga21-->
+					<lb xml:id="p31_r21" facs="#pag31_line21" n="21"/> 
+					maiale con piena coscienza<pc>.</pc> Ebbi
+					<!--Riga22-->
+					<lb xml:id="p31_r22" facs="#pag31_line22" n="22"/> 
+					l'impressione di non fare nulla
+					<!--Riga23-->
+					<lb xml:id="p31_r23" facs="#pag31_line23" n="23"/> 
+					di male<pc>,</pc> anzi di <w><subst> <del rend="overwrite">c</del><add>r</add></subst>ompere</w> una
+					<!--Riga24-->
+					<lb xml:id="p31_r24" facs="#pag31_line24" n="24"/> 
+					superstizione<pc>.</pc> Mi <choice resp="#GMIF"><sic>parainfondo</sic><corr> pare in fondo</corr></choice> che 
+				</ab>
+			</div>
+
+			<!--Codifica pagina 32-->
+			<div type="page" n="32">
+				<pb facs="#p32" xml:id="pag32"  n="4"/>
+				<!--Gap data-->
+				<dateline><date when="1943-12-02" facs="#p32"> <gap reason="omitted"/> </date></dateline>
+				<!--Codifica giorno 2 dicembre 1943-->
+				<ab n="1">
+					<!--Riga1-->
+					<lb xml:id="p32_r1" facs="#pag32_line1" n="1"/>
+					così facendo mi allineo pienamente nella
+					<!--Riga2-->
+					<lb xml:id="p32_r2" facs="#pag32_line2" n="2"/> 
+					tradizione degli antichi profeti<pc>.</pc> Essi <del rend="overstrike" cert="low"> ra</del> com<pc type="return">=</pc>
+					<!--Riga3-->
+					<lb xml:id="p32_r3" facs="#pag32_line3" n="3"/>
+					batterono le credenze assurde<pc>,</pc> fondate su an<pc type="return">=</pc> 
+					<!--Riga4-->
+					<lb xml:id="p32_r4" facs="#pag32_line4" n="4"/>
+					tichi errori di cui si era perduta l<del rend="overtype">a</del>'origine
+					<!--Riga5-->
+					<lb xml:id="p32_r5" facs="#pag32_line5" n="5"/>
+					storica<pc>,</pc> in nome del razionalismo<pc>;</pc> io con<pc type="return">=</pc>  
+					<!--Riga6-->
+					<lb xml:id="p32_r6" facs="#pag32_line6" n="6"/>
+					tinuo<pc>.</pc> Ormai non c'è più nessun pericolo che 
+					<!--Riga7-->
+					<lb xml:id="p32_r7" facs="#pag32_line7" n="7"/>
+					mangiando insieme carne e latte pensi di 
+					<!--Riga8-->
+					<lb xml:id="p32_r8" facs="#pag32_line8" n="8"/>
+					celebrare un sacrificio agli <choice resp="#GMIF"><orig>Dei</orig><reg> dei</reg></choice> cananei e mi 
+					<!--Riga9-->
+					<lb xml:id="p32_r9" facs="#pag32_line9" n="9"/>
+					pare che le ragioni perdute nella notte dei 
+					<!--Riga10-->
+					<lb xml:id="p32_r10" facs="#pag32_line10" n="10"/>
+					secoli per cui l'<choice resp="#GMIF"><orig>Ebreo</orig><reg> ebreo</reg></choice> <subst><del rend="line">non doveva <del rend="overstrike">non</del>gustar</del> <add place="supralinear">si asteneva da</add></subst>
+					<!--Riga11-->
+					<lb xml:id="p32_r11" facs="#pag32_line11" n="11"/>
+					certi animali non abbiano per me nessun
+					<!--Riga12-->
+					<lb xml:id="p32_r12" facs="#pag32_line12" n="12"/>
+					significato<pc>.</pc> Forse <del rend="line">non</del> devo <subst> <del rend="line">gustarle</del><add place="supralinear">astenermene</add></subst> <choice resp="#GMIF"><sic>perchè</sic><corr> perché</corr></choice> i
+					<!--Riga13-->
+					<lb xml:id="p32_r13" facs="#pag32_line13" n="13"/>
+					miei padri <subst> <del rend="line">non non le gustavano?</del><add place="supralinear">se ne astenevano?</add></subst> Questa era
+					<!--Riga14-->
+					<lb xml:id="p32_r14" facs="#pag32_line14" n="14"/>
+					probabilmente la scusa che gli antichi espone<pc type="return">=</pc> 
+					<!--Riga15-->
+					<lb xml:id="p32_r15" facs="#pag32_line15" n="15"/>
+					vano ai profeti per <del rend="line">scusare</del> difendere la loro ido<pc type="return">=</pc> 
+					<!--Riga16-->
+					<lb xml:id="p32_r16" facs="#pag32_line16" n="16"/>
+					latria<pc>,</pc> ma nè <persName ref="#Isaia">Isaia</persName><pc>,</pc> nè <persName ref="#Geremia">Geremia</persName> <del rend="line">non</del> la prendevano 
+					<!--Riga17-->
+					<lb xml:id="p32_r17" facs="#pag32_line17" n="17"/> 
+					per buona<pc>.</pc> Così ragiono<pc>,</pc> ma mi chiedo intanto 
+					<!--Riga18-->
+					<lb xml:id="p32_r18" facs="#pag32_line18" n="18"/>
+					senza saper rispondere se questo ragionamento 
+					<!--Riga19-->
+					<lb xml:id="p32_r19" facs="#pag32_line19" n="19"/>
+					sia autenticamente sincero o non rappresenti 
+					<!--Riga20-->
+					<lb xml:id="p32_r20" facs="#pag32_line20" n="20"/>
+					piuttosto l'ultima spiegazione ebraica del mio ab<pc type="return">=</pc>
+					<!--Riga21-->
+					<lb xml:id="p32_r21" facs="#pag32_line21" n="21"/>
+					bandono dell' <choice resp="#GMIF"><orig>Ebraismo</orig><reg> ebraismo</reg></choice> <pc>.</pc>
+				</ab>
+		
+				<!--Codifica giorno 3 dicembre 1943-->
+				<ab type="day" xml:id="dic_03" n="2">
+					<lb xml:id="p32_r22" facs="#pag32_line22" n="22"/>
+					<space quantity="10"></space><date when="1943-12-03" facs="#p32" rend="align(right)"> 3 dicembre<pc>.</pc></date>
+					<!--Riga22-->
+					<lb xml:id="p32_r23" facs="#pag32_line23" n="23"/>
+					Oggi ho avuto molto da fare<pc>.</pc> Relazioni<pc>,</pc> lettere<pc>,</pc>
+					<!--Riga23-->
+					<lb xml:id="p32_r24" facs="#pag32_line24" n="24"/>
+					registrazioni di nomi<pc>.</pc> Ieri spiegai il mio piano 
+					<!--Riga24-->
+					<lb xml:id="p32_r25" facs="#pag32_line25" n="25"/>
+					a <persName ref="#Barbato"><choice resp="#GMIF"> <abbr type="suspension"> Barb.</abbr><expan> Barbato</expan></choice></persName> che acconsentì a sostituirmi con <rs type="person">papà</rs><pc>,</pc>
+					<!--Riga25-->
+					<lb xml:id="p32_r26" facs="#pag32_line26" n="26"/>
+					tra l'altro non mi soddisfa continuare 
+					<!--Riga26-->
+					<lb xml:id="p32_r27" facs="#pag32_line27" n="27"/>
+					un lavoro sedentario mentre gli altri 
+					<!--Riga27-->
+					<lb xml:id="p32_r28" facs="#pag32_line28" n="28"/>
+					combattono o almeno si preparano a combattere<pc>.</pc>
+					<!--Riga28-->
+					<lb xml:id="p32_r29" facs="#pag32_line29" n="29"/>
+					Appena avrò le tessere false andrò a <placeName ref="#TP"><choice resp="#GMIF"><abbr type="initial"> T. P.</abbr><expan> Torre Pellice</expan></choice></placeName>
+				</ab>
+			</div>
+
+			<!--codifica pagina 33 -->
+			<div type="page" n="33">
+				<pb facs="#p33" xml:id="pag33"  n="5"/>
+				<!--Gap data-->
+				<dateline><date when="1943-12-03" facs="#p33"> <gap reason="omitted"/> </date></dateline>
+				<!--Codifica giorno 3 dicembre 1943-->
+				<ab n="2">
+					<!--Riga1-->
+					<lb xml:id="p33_r1" facs="#pag33_line1" n="1"/>
+					dove nella notte scorsa ha avuto luogo
+					<!--Riga2-->
+					<lb xml:id="p33_r2" facs="#pag33_line2" n="2"/>
+					un<del rend="line">a impresa</del> colpo<pc>:</pc> l'assalto alla caserma 
+					<!--Riga3-->
+					<lb xml:id="p33_r3" facs="#pag33_line3" n="3"/>
+					della <term ref="#termMil">milizia</term> a <placeName ref="#BO">Bobbio</placeName><pc>.</pc> <del rend="line">Ci so</del> La sparatoria
+					<!--Riga4-->
+					<lb xml:id="p33_r4" facs="#pag33_line4" n="4"/>
+					pare durata <num>6</num> ore<pc>,</pc> il che <del rend="line">lascia poco a </del> è poco
+					<!--Riga5-->
+					<lb xml:id="p33_r5" facs="#pag33_line5" n="5"/>
+					simpatico<pc>,</pc> <choice resp="#GMIF"><sic>perchè</sic><corr> perché</corr></choice> i colpi di sorpresa devono 
+					<!--Riga6-->
+					<lb xml:id="p33_r6" facs="#pag33_line6" n="6"/>
+					avvenire <del rend="line"> senza in</del> di sorpresa<pc>.</pc>
+
+					<!--Riga7-->
+					<lb xml:id="p33_r7" facs="#pag33_line7" n="7"/>
+					<space quantity="10"></space><date when="1943-12-04" facs="#p33" rend="align(right)"><choice resp="#GMIF"><abbr type="suspension">4 dic.</abbr><expan> 4 dicembre </expan> </choice></date>
+					<!--Riga8-->
+					<lb xml:id="p33_r8" facs="#pag33_line8" n="8"/>
+					Sulla spedizione di <placeName ref="#BO">Bobbio</placeName> nulla di nuovo<pc>.</pc>
+					<!--Riga9-->
+					<lb xml:id="p33_r9" facs="#pag33_line9" n="9"/>
+					la sparatoria è durata <num>6</num> ore<pc>,</pc> quindi
+					<!--Riga10-->
+					<lb xml:id="p33_r10" facs="#pag33_line10" n="10"/>
+					la sorpresa è mancata<pc>.</pc> Ieri <num>tre</num> cannoni 
+					<!--Riga11-->
+					<lb xml:id="p33_r11" facs="#pag33_line11" n="11"/>
+					tedeschi o <term ref="#termFasc">fascisti</term> sono saliti dalla parte 
+					<!--Riga12-->
+					<lb xml:id="p33_r12" facs="#pag33_line12" n="12"/>
+					di <placeName ref="#TP"> <choice resp="#GMIF"><abbr type="initial"> T. P.</abbr><expan>Torre Pellice</expan></choice></placeName> <pc>;</pc> sono scese automobili della <orgName ref="#CR">Croce
+					<!--Riga13-->
+					<lb xml:id="p33_r13" facs="#pag33_line13" n="13"/>
+					Rossa </orgName> con <term ref="termMil">militi</term> feriti<pc>.</pc> Tutto questo è 
+					<!--Riga14-->
+					<lb xml:id="p33_r14" facs="#pag33_line14" n="14"/>
+					molto grave <choice resp="#GMIF"><sic>perchè</sic><corr> perché</corr></choice> la guerra di 
+					<!--Riga15-->
+					<lb xml:id="p33_r15" facs="#pag33_line15" n="15"/>
+					bande è guerra di colpi che devono
+					<!--Riga16-->
+					<lb xml:id="p33_r16" facs="#pag33_line16" n="16"/>
+					subito riuscire<pc>.</pc> Se il colpo è fallito<pc>,</pc> non 
+					<!--Riga17-->
+					<lb xml:id="p33_r17" facs="#pag33_line17" n="17"/>
+					<sic>mi</sic> <del rend="line">preoccupa</del> mi spiace solo per il colpo<pc>,</pc> 
+					<!--Riga18-->
+					<lb xml:id="p33_r18" facs="#pag33_line18" n="18"/>
+					ma anche <choice resp="#GMIF"><sic>perchè</sic><corr> perché</corr></choice> rappresenta uno scacco
+					<!--Riga19-->
+					<lb xml:id="p33_r19" facs="#pag33_line19" n="19"/>
+					per il <orgName ref="#PDA"><choice><abbr type="acronym">P.d.A</abbr><expan> Partito d'Azione</expan></choice></orgName><pc>.</pc> Mentre qui a <placeName ref="#BA">Barge</placeName> la 
+					<!--Riga20-->
+					<lb xml:id="p33_r20" facs="#pag33_line20" n="20"/>
+					banda <term ref="#termCom"> <choice resp="#GMIF"> <abbr>com.</abbr> <expan> comunista</expan></choice></term> riporta continui successi 
+					<!--Riga21-->
+					<lb xml:id="p33_r21" facs="#pag33_line21" n="21"/>
+					e non passa giorno senza che si faccia
+					<!--Riga22-->
+					<lb xml:id="p33_r22" facs="#pag33_line22" n="22"/>
+					un colpo grosso o piccolo<pc>,</pc> il <orgName ref="#PDA"><choice><abbr type="acronym">P.d.A.</abbr><expan> Partito d'Azione</expan></choice></orgName> fino
+					<!--Riga23-->
+					<lb xml:id="p33_r23" facs="#pag33_line23" n="23"/>
+					ad ora è stato poco attivo ed ora
+					<!--Riga24-->
+					<lb xml:id="p33_r24" facs="#pag33_line24" n="24"/> 
+					sbaglia un colpo<pc>.</pc> Ieri sera c'erano 
+					<!--Riga25-->
+					<lb xml:id="p33_r25" facs="#pag33_line25" n="25"/>
+					qui <persName ref="#Luigi">Luigi</persName> e <persName ref="#Fiore">Fiore</persName><pc>.</pc> Si parlò di politica<pc>.</pc>
+				</ab>
+			</div> 
+		</body>
+
+		<back> <!--materiale che segue il testo -->
+			<listPerson> <!--lista di persone presenti nel testo -->
+				<head> Persone </head> 
+				<person xml:id="EA" sex="M" age="adult">
+					<persName role="partigiano">
+						<forename> Emanuele </forename>
+						<surname> Artom </surname>
+					</persName>
+					<birth>
+						<date when="1915-06-23">23 giugno 1915 </date>
+						<placeName>
+							<settlement type="city"> Aosta </settlement>
+							<settlement type="region"> Valle d'Aosta </settlement>
+							<country key="IT">Italia </country>
+						</placeName>
+					</birth>
+					<death>
+						<date when="1944-04-07">7 aprile 1944 </date>
+						<placeName ref="#TO">
+							<settlement type="municipality"> Torino </settlement>
+	                        <settlement type="region"> Piemonte </settlement>
+							<country key="IT">Italia</country>
+						</placeName>
+					</death>
+					<note> Emanuele Artom nasce ad Aosta il 23 giugno 1915. Tra i collaboratori del grande Dizionario enciclopedico Utet già dal 1935, nel novembre 1937 ottiene la laurea in lettere presso l'Università di Milano, e sempre nel 1937, in collaborazione con Guido Bonfiglioli pubblica il volume "Elena o della Parodia". Qualche anno dopo, nel 1941 consegna alle stampe la prima edizione dei "Principi di storia e cultura ebraica", più volte ristampato. Antifascista, nel maggio 1943 Artom si iscrive al Partito d'azione. Dopo l'armistizio, con il nome di Eugenio Ansaldi, si arruola tra i partigiani come delegato azionista in una brigata garibaldina di Barge. In seguito è nominato commissario politico delle bande "Italia Libera" in Val Pellice e Val Germanasca. Catturato dai fascisti nel marzo 1944, Emanuele Artom viene consegnato ai tedeschi e rinchiuso nelle Carceri Nuove di Torino dove il 7 aprile 1944 muore a causa delle torture inflittegli. 
+					</note>
+				</person>
+
+				<person xml:id="AS" sex="F" age="senior">
+					<persName role="insegnante">
+						<forename> Amalia </forename>
+						<surname> Segre </surname>
+					</persName>
+					<birth>
+						<date when="1890"> 1890</date>
+						<placeName ref="#TO">
+							<settlement type="city"> Torino </settlement>
+							<settlement type="region"> Piemonte </settlement>
+							<country key="IT"> Italia </country>
+						</placeName>
+					</birth>
+					<death>
+						<date when="1972-10-09"> 9 Ottobre 1972 </date>
+						<placeName ref="#TO">
+							<settlement type="municipality"> Torino </settlement>
+	                        <settlement type="region"> Piemonte </settlement>
+							<country key="IT"> Italia</country>
+						</placeName>
+					</death>
+					<note> Amalia è la madre di Emanuele Artom, nata a Torino (Piemonte, Italia) nel 1890. Era un insegnante ed è lei che con una lettera decide di donare il diario alla Fondazione CDEC. Il 09 ottobre del 1972 muore nella sua città natale.
+					</note>
+				</person>
+
+				<person xml:id="VG" sex="M" age="adult">
+					<persName role="partigiano">
+						<forename> Vittorio </forename>
+						<surname> Gabetti</surname>
+					</persName>
+					<birth>
+						<date when="1922">1922</date>
+					</birth>
+					<death>
+						<date when="1944">1944</date>
+					</death>
+					<note> Nasce nel 1922 e muore nel 1944, era un partigiano come Emanuele. Citato dall'autore nella pagina 29 riga 3. </note>
+				</person>
+
+				<person xml:id="Lino" sex="M">
+					<persName role="unknown">
+						<forename> Lino </forename>
+					</persName>
+					<note> Non identificato. Citato dall'autore nella pagina 29 riga 21. </note>
+				</person>
+
+				<person xml:id="Marcella" sex="F">
+					<persName role="unknown">
+						<forename> Marcella </forename>
+					</persName>
+					<note>  Non identificata. Citata dall'autore nella pagina 30 riga 1. </note>
+				</person>
+
+				<person xml:id="Gina" sex="F">
+					<persName role="unknown">
+						<forename> Gina </forename>
+					</persName>
+					<note> Non identificata. Citata dall'autore nella pagina 30 riga 23.</note>
+				</person>
+
+				<person xml:id="Isaia" sex="M">
+					<persName role="profeta biblico">
+						<ref xml:lang="it" target="https://it.wikipedia.org/wiki/Isaia_(profeta)"/>
+						<forename> Isaia </forename>
+					</persName>
+					<birth>
+						<date>circa nel VII secolo a.C</date>
+					</birth>
+					<death>
+						<date>circa nel VI secolo a.C</date>
+					</death>
+					<note> Nato circa nel VII secolo a.C e morto nel VI secolo a.C è stato un profeta biblico. Citato dall'autore nella pagina 32 riga 16. </note>
+				</person>
+
+				<person xml:id="Geremia" sex="M">
+					<persName role="profeta biblico">
+						<ref xml:lang="it" target="https://it.wikipedia.org/wiki/Geremia_(profeta)"/>
+						<forename> Geremia </forename>
+					</persName>
+					<birth>
+						<date>circa nel VII secolo a.C</date>
+					</birth>
+					<death>
+						<date>circa nel VI secolo a.C</date>
+					</death>	
+					<note> Nato circa nel VII secolo a.C e morto nel VI secolo a.C è stato un profeta biblico. Citato dall'autore nella pagina 32 riga 16. </note>
+				</person>
+
+				<person xml:id="Barbato" sex="M">
+					<persName role="comandante">Barbato</persName>
+	                <note> Ha svolto il ruolo di comandante. Citato dall'autore nella pagina 32 riga 25.  </note>
+				</person>
+
+				<person xml:id="Luigi" sex="M">
+					<persName>
+						<forename>Luigi</forename>
+					</persName>
+	                <note> Non identificato. Citato dall'autore nella pagina 33 riga 25.</note>
+				</person>
+
+				<person xml:id="Fiore" sex="M">
+					<persName>
+						<forename>Fiore</forename>
+					</persName>
+	                <note>Non identificato. Citato dall'autore nella pagina 33 riga 25. </note>
+				</person>
+			</listPerson>
+
+			<listPlace> <!-- lista dei luoghi nominati nel testo -->
+				<head> Luoghi </head>
+				<place xml:id="TO">
+					<placeName>Torino</placeName>
+					<desc> è un comune italiano e capoluogo della regione Piemonte </desc>
+				</place>
+
+				<place xml:id="CU">	
+					<placeName>Cuneo</placeName>
+					<desc> è un comune italiano della regione Piemonte</desc>
+				</place>
+
+				<place xml:id="VDP">
+					<placeName> Valle del Pellice</placeName>
+					<desc> è una valle alpina della città di Torino</desc>
+				</place>
+
+				<place xml:id="MO">
+					<placeName> Moriondo</placeName>
+					<desc> è un comune italiano della città di Torino</desc>
+				</place>
+
+				<place xml:id="TP">
+					<placeName> Torre Pellice</placeName>
+					<desc> è un comune italiano della città di Torino </desc>
+				</place>
+
+				<place xml:id="BO">
+					<placeName> Bobbio Pellice</placeName>
+						<desc> è un comune italiano della provincia di Torino</desc>
+				</place>
+
+				<place xml:id="BA">
+					<placeName> Barge</placeName>
+					<desc> è un comune italiano della provincia di Cuneo </desc>
+				</place>
+			</listPlace>
+
+			<listOrg> <!-- lista delle organizzazioni nominate nel testo -->
+				<head> Organizzazioni</head>
+				<org xml:id="CDEC">
+					<orgName> Centro di documentazione ebraica contemporanea </orgName>
+					<desc> è un istituto storico culturale indipendente con sede a Milano, che promuove lo studio delle vicende storiche, della cultura e della realtà degli ebrei, con particolare riferimento all'Italia e all'età contemporanea. </desc>
+					<country  key="IT" type="nation"> Italia</country>	
+				</org>
+
+				<org xml:id="PDA">
+					<orgName> Partito d'Azione </orgName>
+					<desc>è stato un partito politico italiano di centro-sinistra fondato nel 1942.Tra i suoi obiettivi politici c'erano le elezioni a suffragio universale, la libertà di stampa e di pensiero, la responsabilizzazione dei governi davanti al popolo.</desc>
+					<country  key="IT" type="nation"> Italia</country>	
+				</org>
+
+				<org xml:id="CR">
+					<orgName> Croce Rossa Italiana </orgName>
+					<desc> è un'organizzazione di volontariato, componente del Movimento Internazionale della Croce Rossa e della Mezzaluna Rossa e operante nel territorio italiano.</desc>
+					<country  key="IT" type="nation"> Italia</country>	
+				</org>
+			</listOrg>
+
+			<list type="gloss"> <!-- lista dei termini presenti nel testo e la loro definizione--> 
+				<head> Termini </head>
+				<label>
+					<term xml:id="termAnt"> Antisemitismo </term>
+				</label>
+				<item>
+					<gloss target="#termAnt" source="https://www.treccani.it/vocabolario/antisemitismo/"> Avversione e lotta contro gli Ebrei, manifestatasi anticamente come ostilità di carattere religioso, divenuta in seguito, vera e propria persecuzione razziale basata su aberranti teorie pseudoscientifiche. </gloss>
+				</item>
+
+				<label>
+					<term xml:id="termPart"> Partigiano </term>
+				</label>
+				<item>
+					<gloss target="#termPart" source="https://www.treccani.it/enciclopedia/partigiano/"> Chi parteggia, chi si schiera da una determinata parte, chi aderisce a un partito, sostenendone le idee, seguendone le direttive, per lo più con spirito fazioso e settario. </gloss>
+				</item>
+
+				<label>
+					<term xml:id="termFasc" > Fascismo </term>
+				</label>
+				<item>
+					<gloss target="#termFasc" source="https://www.treccani.it/vocabolario/fascismo/">Movimento politico italiano che trasse origine e nome dai Fasci di combattimento fondati nel 1919 da B. Mussolini, conquistò il potere nel 1922 con la marcia su Roma e trasformandosi poi, a partire dal 1925, in un regime dittatoriale a carattere totalitario e nazionalista che tenne il governo d’Italia fino al 25 luglio 1943. </gloss>
+				</item>
+
+				<label>
+					<term xml:id="termCom"> Comunismo </term>
+				</label>
+				<item>
+					<gloss target="#termCom" source="https://www.treccani.it/vocabolario/comunismo/"> Dottrina che, sulla base delle formulazioni teoriche di Marx e Engels, propugna un sistema sociale nel quale sia i mezzi di produzione sia i beni di consumo siano sottratti alla proprietà privata e trasformati in proprietà comune, e la gestione e distribuzione di essi venga esercitata collettivamente dall’intera società nell’interesse e con la piena partecipazione di tutti i suoi membri. </gloss>
+				</item>
+
+				<label>
+					<term xml:id="termMil"> Milizia </term>
+				</label>
+				<item>
+					<gloss target="#termMil" source="https://www.treccani.it/vocabolario/milizia/"> Moltitudine di uomini armati, sottoposti alla disciplina militare e ammaestrati al combattimento; è parola usata per lo più in senso storico, con riferimento agli eserciti delle età passate. </gloss>
+				</item>
+			</list>
+
+			<listBibl> <!-- lista della bibliografia -->
+				<head> Bibliografia </head>
+				<bibl xml:id="Bibl1"> 
+					<title>Diari di un partigiano ebreo.</title>
+					<title type="sub">Gennaio 1940 - febbraio 1944</title>
+					<author ref="#EA">
+						<forename> Emanuele</forename>
+						<surname>Artom</surname>
+					</author>
+					<editor xml:id="GS">
+						<forename>Guri</forename>
+						<surname>Schwarz</surname>
+					</editor>
+					<pubPlace>
+						<placeName ref="#TO">Torino</placeName>
+					</pubPlace>
+	                <date when="2008">2008</date>
+	                <publisher>Bollati Boringhieri</publisher>
+	            </bibl>
+
+	            <bibl xml:id="Bibl2"> 
+					<title>La moralità armata</title>
+					<title type="sub">Studi su Emanuele Artom</title>
+					<author ref="#EA">
+						<forename>Emanuele</forename>
+						<surname>Artom</surname>
+					</author>
+					<editor>
+						<forename>Alberto</forename>
+						<surname>Cavaglion</surname>
+					</editor>
+					<pubPlace>
+						<placeName>Milano</placeName>
+					</pubPlace>
+	                <date when="1993">1993</date>
+	                <publisher>Franco Angeli</publisher>
+	            </bibl>
+
+	            <bibl xml:id="Bibl3"> 
+					<title>Emanuele Artom, diari:</title>
+					<title type="sub">Gennaio 1940 - Febbraio 1944</title>
+					<author ref="#EA">
+						<forename>Emanuele</forename>
+						<surname>Artom</surname>
+					</author>
+					<editor xml:id="ER">
+						<forename>Eloisa</forename>
+						<surname>Ravenna</surname>
+					</editor>
+					<editor xml:id="PDB">
+						<forename>Paola</forename>
+						<surname>De Benedetti</surname>
+					</editor>
+					<pubPlace>
+						<placeName>Milano</placeName>
+					</pubPlace>
+	                <date when="1966">1966</date>
+	                <publisher>Centro di documentazione ebraica contemporanea</publisher>
+	            </bibl>
+
+	            <bibl xml:id="Bibl4">
+	            	<title>Tre vite dall'ultimo 800 alla metà del 900:</title>
+					<title type="sub">studi e memorie di Emilio, Emanuele, Ennio Artom</title>
+					<author ref="#EA">
+						<forename>Emanuele</forename>
+						<surname>Artom</surname>
+					</author>
+					<editor>
+						<forename>Benvenuta</forename>
+						<surname>Treves</surname>
+					</editor>
+					<pubPlace>
+						<placeName>Firenze</placeName>
+					</pubPlace>
+	                <date when="1954">1954</date>
+	                <publisher>Israel</publisher>
+	            </bibl>
+
+	            <bibl xml:id="Bibl5">
+	            	<title>Eloisa e il CDEC</title>
+					<title type="sub">Liliana Picciotto Fargion , edito in «La rassegna mensile di Israel, terza serie, vol. 47.1/6</title>
+					<author>
+						<forename>Liliana </forename>
+						<surname>Picciotto Fargion</surname>
+					</author>
+					<pubPlace>
+						<placeName>Milano</placeName>
+					</pubPlace>
+	                <date when="1981">1981</date>
+	                <publisher>Centro di documentazione ebraica contemporanea</publisher>
+	            </bibl>
+	        </listBibl>
+		</back>
+	</text>
+</TEI>
+ 
+
+		
+
+
+
+								 
+
+
+
+
+
+
+
